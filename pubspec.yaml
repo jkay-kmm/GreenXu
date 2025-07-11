@@ -1,0 +1,56 @@
+name: greenxu
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter # Flutter SDK
+  cupertino_icons: ^1.0.8 # iOS style icons
+  flutter_svg: ^2.2.0 # SVG rendering for Flutter
+  equatable: ^2.0.7 # Simplifies value equality
+  bloc: ^9.0.0 # BLoC pattern library
+  flutter_bloc: ^9.1.1 # Flutter widgets for BLoC
+  font_mapper: ^1.0.2 # Font mapping utility
+  shared_preferences: ^2.5.3 # Persistent key-value storage
+  go_router: ^16.0.0 # Declarative routing for Flutter
+  intl: ^0.20.2 # Internationalization and localization
+  hive: ^2.2.3 # Lightweight key-value database
+  connectivity_plus: ^6.1.4 # Network connectivity status
+  freezed_annotation: ^3.1.0 # Code generation for unions/pattern-matching
+  json_serializable: ^6.9.5 # JSON serialization codegen
+  http: ^1.4.0 # HTTP requests
+  dartz: ^0.10.1 # Functional programming tools
+  loading_animation_widget: ^1.3.0 # Loading animations
+  path_provider: ^2.1.5 # File system paths
+  app_settings: ^6.1.1 # App settings manipulation
+  url_launcher: ^6.3.1 # Launch URLs in the browser
+  percent_indicator: ^4.2.5 # Circular and linear percent indicators
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.5.4
+  freezed: ^3.1.0
+  json_serializable: ^6.9.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+        - assets/images/
+        - assets/images/svg/
+        - assets/images/png/
+        - assets/images/jpg/
+        - assets/icons/
+        - assets/fonts/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
