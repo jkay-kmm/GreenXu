@@ -2,6 +2,8 @@ import 'package:go_router/go_router.dart';
 import 'package:greenxu/presentation/pages/splash/splash_screen.dart';
 import 'package:greenxu/presentation/pages/option/option_screen.dart';
 
+import '../pages/register/register.dart';
+
 final GoRouter appRouter = GoRouter(
   routerNeglect: false,
   initialLocation: '/splash',
@@ -14,11 +16,11 @@ final GoRouter appRouter = GoRouter(
     //   builder: (context, state) => const GetStartedPage(),
     // ),
     // GoRoute(path: '/login', builder: (context, state) => const LoginScreen()),
-    // GoRoute(
-    //   path: '/register',
-    //   builder: (context, state) => const RegisterScreen(),
-    // ),
-    //
+    GoRoute(
+      path: '/register',
+      builder: (context, state) => const RegisterScreen(),
+    ),
+
     // GoRoute(
     //   path: '/',
     //   builder: (context, state) => const AuthGuard(child: HomeScreen()),
